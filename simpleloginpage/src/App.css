@@ -1,0 +1,44 @@
+body {
+    background-color: #3498DB;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.login {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.login-screen {
+    background-color: #fff;
+    margin-top: 150px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.app-title {
+    font-family: 'tahoma';
+    color: #777777;
+    text-align: center;
+}
+
+.login-form {
+    text-align: center;
+}
+
+.group-control {
+    margin-bottom: 10px;
+}
+
+.login-field {
+    width: 250px;
+    height: 50px;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
