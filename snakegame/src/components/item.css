@@ -8,7 +8,7 @@
 }
 
 .food {
-    background-color: gold;
+    background-color: green;
     font: 15px "Shabnam FD";
     color: #000;
     text-align: center;
@@ -16,7 +16,7 @@
 }
 
 .snake {
-    background-color: #005cc5;
+    background-color: red;
     font: 15px "Shabnam FD";
     color: #000;
     text-align: center;
