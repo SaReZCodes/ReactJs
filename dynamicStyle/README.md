@@ -1,11 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
+# readme
+If the number of persons is less than three, the texts are red and if one person remains, it is highlighted in red. 
 ### `npm start`
 
 Runs the app in the development mode.\
