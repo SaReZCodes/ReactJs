@@ -1,4 +1,5 @@
 import react, { Component } from "react";
+import Radium from 'radium';
 
 class PersonList extends Component {
 
@@ -27,7 +28,7 @@ class PersonList extends Component {
             <ul className={personClass.join(' ')}>
                 {this.state.personList.map((person, index) => {
                     return <li key={person.id}>
-                        <button onClick={this.removeHandler.bind(this, index)}>X</button>
+                        <button style={this.buttonStyle} key={person.id} onClick={this.removeHandler.bind(this, index)}>X</button>
                         {person.id}
                         ,
                         {person.name}
@@ -37,8 +38,30 @@ class PersonList extends Component {
                 })}
             </ul>
         )
+
+        // this.buttonStyle.backgroundColor = 'red';
+        // this.buttonStyle[':hover'] = {
+        //   backgroundColor: 'salmon',
+        //   color: 'black'
+        // }
+    }
+
+    buttonStyle = {
+        backgroundColor: 'green',
+        color: 'white',
+        font: 'inherit',
+        border: '1px solid blue',
+        padding: '8px',
+        cursor: 'pointer',
+        ':hover': { //Working by radium
+            backgroundColor: 'lightgreen',
+            color: 'black'
+        },
+        '@media (min-width: 500px)' : {
+            //Working by radium
+        }
     }
 
 }
 
-export default PersonList;
+export default Radium(PersonList);
