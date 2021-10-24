@@ -1,5 +1,5 @@
-import React from 'react';
-import'./Manager.css';
+import React, { useEffect } from 'react';
+import './Manager.css';
 
 const Manager = (props) => {
     const assignedClasses = [];
@@ -14,6 +14,14 @@ const Manager = (props) => {
         assignedClasses.push('bold'); // classes = ['red', 'bold']
     }
 
+    useEffect(() => {
+        if (props.persons.length < 3) {
+            console.log('[manager.js] useEffect');
+            alert('data changed');
+        }
+    }, [props.persons]);
+
+
     return (
         <div className={'Manager'}>
             <h1>Hi, I'm a React App</h1>
@@ -24,6 +32,8 @@ const Manager = (props) => {
             </button>
         </div>
     );
+
 }
+
 
 export default Manager;
