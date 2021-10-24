@@ -1,0 +1,30 @@
+.red {
+    color: red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.Manager button {
+    border: 1px solid blue;
+    padding: 16px;
+    background-color: green;
+    font: inherit;
+    color: white;
+    cursor: pointer;
+}
+
+.Manager button:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+.Manager button.Red {
+    background-color: red;
+}
+
+.Manager button.Red:hover {
+    background-color: salmon;
+    color: black;
+}
