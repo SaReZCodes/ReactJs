@@ -1,7 +1,8 @@
 import React from 'react';
 import classes from './Person.css';
-
-const person = ( props ) => {
+import PropTypes from 'prop-types';
+const person = (props) => {
+    console.log('[Person.js] render');
     return (
         <div className={classes.Person}>
             <p onClick={props.click}>I'm {props.name} and I am {props.age} years old!</p>
@@ -12,3 +13,10 @@ const person = ( props ) => {
 };
 
 export default person;
+
+person.propTypes = {
+    click: PropTypes.func,
+    name: PropTypes.string,
+    age: PropTypes.number,
+    changed: PropTypes.func
+}
