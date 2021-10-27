@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import classes from './App.css';
 import Persons from '../components/Persons/Persons';
+import PersonsPureComponent from '../components/Persons/PersonsPureComponent';
 import Manager from '../components/Manager/Manager';
+import withClass from '../hoc/WithClass';
 
 class App extends Component {
   state = {
@@ -45,23 +47,36 @@ class App extends Component {
     this.setState({ showPersons: !doesShow });
   }
 
+  static getDerivedStateFromProps(props, state) {
+    console.log('[App.js] getDerivedStateFromProps', props);
+    console.log('[App.js] getDerivedStateFromProps ->State', state);
+    return state;
+  }
+
   render() {
+    console.log('[App.js] render');
     let persons = null;
+    let pureComponentPersons = null;
     if (this.state.showPersons) {
       persons = <Persons
+        persons={this.state.persons}
+        clicked={this.deletePersonHandler}
+        changed={this.nameChangedHandler} />
+      pureComponentPersons = <PersonsPureComponent
         persons={this.state.persons}
         clicked={this.deletePersonHandler}
         changed={this.nameChangedHandler} />
     }
 
     return (
-      <div className={classes.App}>
+      <withClass classes={classes.App}>
         <Manager
           showPersons={this.state.showPersons}
-          persons={this.state.persons}
+          length={this.state.persons.length}
           clicked={this.togglePersonsHandler} />
         {persons}
-      </div>
+        {pureComponentPersons}
+      </withClass>
     );
   }
 }
