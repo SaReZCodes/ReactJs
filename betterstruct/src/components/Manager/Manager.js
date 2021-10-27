@@ -2,24 +2,25 @@ import React, { useEffect } from 'react';
 import './Manager.css';
 
 const Manager = (props) => {
+    console.log('[manager.js] render ');
     const assignedClasses = [];
     let btnClass = '';
     if (props.showPersons) {
         btnClass = 'Red';
     }
-    if (props.persons.length <= 2) {
+    if (props.length <= 2) {
         assignedClasses.push('red'); // classes = ['red']
     }
-    if (props.persons.length <= 1) {
+    if (props.length <= 1) {
         assignedClasses.push('bold'); // classes = ['red', 'bold']
     }
 
     useEffect(() => {
-        if (props.persons.length < 3) {
+        if (props.length < 3) {
             console.log('[manager.js] useEffect');
             alert('data changed');
         }
-    }, [props.persons]);
+    }, [props.length]);
 
 
     return (
@@ -36,4 +37,4 @@ const Manager = (props) => {
 }
 
 
-export default Manager;
+export default React.memo(Manager);
