@@ -1,0 +1,282 @@
+.dimg1 {
+    background-image: url('../../../assets/img/italiaei.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.dimg2 {
+    background-image: url('../../../assets/img/usa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.simg2 {
+    background-image: url("../../../assets/img/mexiki.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.simg22 {
+    background-image: url("../../../assets/img/goda.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.chimg1 {
+    background-image: url("../../../assets/img/chedar.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.chimg2 {
+    background-image: url("../../../assets/img/mozela.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.mimg5 {
+    background-image: url("../../../assets/img/peperoni.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+    width: 400px;
+    height: 400px;
+}
+
+.mimg1 {
+    background-image: url("../../../assets/img/goosht.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.mimg2 {
+    background-image: url("../../../assets/img/raste.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.mimg3 {
+    background-image: url("../../../assets/img/restbifpizza.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.mimg4 {
+    background-image: url("../../../assets/img/morgh.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.figure {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.mimg5 {
+    background-image: url("../../../assets/img/peperoni.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.mimg6 {
+    background-image: url("../../../assets/img/jambon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.saimg1 {
+    background-image: url("../../../assets/img/gharch.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.saimg2 {
+    background-image: url("../../../assets/img/felfel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.saimg3 {
+    background-image: url("../../../assets/img/zeyton.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.saimg4 {
+    background-image: url("../../../assets/img/zorat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.saimg5 {
+    background-image: url("../../../assets/img/gojefarangi.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.figure-profile {
+    border: 0px;
+}
+
+h5 {
+    background-color: #E3EAF1;
+    text-align: center;
+    min-height: 40px;
+    margin-top: 5px;
+    padding: 16px;
+}
+
+.material-icons {
+    font-size: 50px;
+}
+
+.borderRed {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px #ff4700 solid;
+    border-radius: 0.90rem
+}
+
+.meet {
+    min-height: 40px;
+    padding: 10px;
+}
+
+.meet-card {
+    margin-top: -12px;
+}
+
+.align-self-center {
+    -ms-flex-item-align: center!important;
+    align-self: center!important;
+}
+
+@media (min-width: 992px) {
+    .col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+}
+
+.col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.meet-icon {
+    font-size: 20px;
+}
+
+.check {
+    color: #ff4700;
+}
+
+.notcheck {
+    color: gray;
+}
