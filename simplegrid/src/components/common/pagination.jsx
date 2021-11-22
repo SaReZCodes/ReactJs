@@ -26,7 +26,7 @@ const Pagination = (props) => {
                     {
                         pages.map(
                             item => {
-                                return (<li className="page-item">
+                                return (<li className="page-item" onClick={props.onPageChange}>
                                     <a className="page-link" style={{ cursor: "pointer" }} >
                                         {item}
                                     </a>
