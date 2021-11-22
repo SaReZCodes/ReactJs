@@ -1,17 +1,31 @@
 import React from 'react';
 import classes from './Person.css';
 import PropTypes from 'prop-types';
-const person = (props) => {
-    console.log('[Person.js] render');
-    return (
-        <div className={classes.Person}>
-            <p onClick={props.click}>I'm {props.name} and I am {props.age} years old!</p>
-            <p>{props.children}</p>
-            <input type="text" onChange={props.changed} value={props.name} />
-        </div>
-    )
-};
+import AuthContext from '../../../context/auth-context';
+import { Component } from 'react';
+import { render } from '@testing-library/react';
 
+class person extends Component {
+    constructor(props) {
+        super(props);
+        console.log('[Person.js] render');
+    }
+
+    static contextType = AuthContext;
+    componentDidMount() {
+        console.log(this.context.authenticated);
+    }
+    render() {
+        return (
+            <div className={classes.Person}>
+                {this.context.authenticated ? <p>Authenticated!</p> : <p>please login</p>}
+                <p onClick={this.props.click}>I'm {this.props.name} and I am {this.props.age} years old!</p>
+                <p>{this.props.children}</p>
+                <input type="text" onChange={this.props.changed} value={this.props.name} />
+            </div>
+        )
+    }
+}
 export default person;
 
 person.propTypes = {
