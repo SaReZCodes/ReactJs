@@ -1,4 +1,5 @@
 An example to display data in React 
+
 The following items are used in this example. 
 
 1.Communication of components 
