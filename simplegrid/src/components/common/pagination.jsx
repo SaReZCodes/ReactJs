@@ -1,5 +1,4 @@
-import { render } from "@testing-library/react";
-import react from "react";
+import PropTypes from "prop-types";
 
 const getPageNumbers = (dataSize, pageSize) => {
     const size = Math.ceil(dataSize / pageSize);
@@ -19,24 +18,34 @@ const Pagination = (props) => {
 
     if (!pages)
         return null;
-    else
+    else {
         return (
             <nav aria-label="Page navigation">
                 <ul className="pagination justify-content-center">
                     {
                         pages.map(
                             item => {
-                                return (<li className="page-item" onClick={props.onPageChange}>
-                                    <a className="page-link" style={{ cursor: "pointer" }} >
-                                        {item}
-                                    </a>
-                                </li>)
+                                return (
+                                    <li className={props.currentPage === item ? "page-item active" : "page-item"} key={item} onClick={() => props.onPageChange(item)}>
+                                        <a className="page-link" style={{ cursor: "pointer" }} >
+                                            {item}
+                                        </a>
+                                    </li>
+                                )
                             }
                         )
                     }
                 </ul>
             </nav>
         )
+    }
 }
+
+Pagination.propTypes = {
+    dataSize: PropTypes.number.isRequired,
+    pageSize: PropTypes.number.isRequired,
+    currentPage: PropTypes.number.isRequired,
+    onPageChange: PropTypes.func.isRequired
+};
 
 export default Pagination;
