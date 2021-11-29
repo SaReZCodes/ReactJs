@@ -10,5 +10,5 @@ The following items are used in this example.
 
 4.propTypes
 
-5.Validate Forms Data With 'Joi'(data validator for JavaScript)
+5.Validate Form Data With 'Joi'(data validator for JavaScript)
 
