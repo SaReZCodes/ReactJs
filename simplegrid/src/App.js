@@ -1,10 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import Personel from './components/personel';
 import About from './components/about';
 import React from 'react';
 import { Link, Route, Routes } from "react-router-dom";
 import Home from './components/home';
+import {LoginForm} from './components/loginForm';
+
+
 
 function App() {
   return (
@@ -14,14 +16,16 @@ function App() {
           <ul className="navbar-nav mr-auto">
             <li className="nav-item"><Link className="nav-link" to="/">Home</Link></li>
             <li className="nav-item"><Link className="nav-link" to="/personel">personels</Link></li>
-            <li className="nav-item"><Link className="nav-link" to="/about">about</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/about/1">about</Link></li>
+            <li className="nav-item"><Link className="nav-link" to="/login">Login</Link></li>
           </ul>
         </nav>
       </header>
       <Routes>
 
         <Route path="/personel" element={<Personel />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about/:id" element={<About />} />
+        <Route path="/login" element={<LoginForm />} />
         <Route path="/" element={<Home />} />
       </Routes>
     </main>

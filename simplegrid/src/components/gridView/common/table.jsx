@@ -1,11 +1,7 @@
-import react, { Component } from "react";
+import { Component } from "react";
 import Like from "./like";
 
 export class Table extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (<table className="table table-sm">
             <thead>

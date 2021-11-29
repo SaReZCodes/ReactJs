@@ -1,5 +1,9 @@
+import {
+    useParams
+  } from "react-router-dom";
 const About = (props) => {
-    return (<h1>My Name Is Saeed</h1>)
+    let { id } = useParams();
+    return (<h1>My Name Is Saeed {id}</h1>)
 }
 
 export default About;

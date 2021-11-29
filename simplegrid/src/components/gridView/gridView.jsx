@@ -1,12 +1,12 @@
 import { Component } from "react";
-import Pagination from '../common/pagination';
-import { Table } from "../common/table";
+import Pagination from './common/pagination';
+import { Table } from "./common/table";
 
 export class GridView extends Component {
     state = {
         dataSource: [],
         pageSize: 5,
-        currentPage: 1,
+        currentPage: 1
     }
 
     componentDidMount() {
@@ -72,14 +72,11 @@ export class GridView extends Component {
         this.setState({ currentPage: page });
     }
 
-    orderHandler() {
-        const data = [...this.props.dataSource];
-    }
-
     paginate() {
         const _dataSource = this.props.dataSource;
         const first = (this.state.currentPage - 1) * this.state.pageSize;
         const last = first + this.state.pageSize;
         return _dataSource.slice(first, last);
     }
+
 }
