@@ -62,14 +62,19 @@ export class BaseForm extends Component {
     renderInput(name, label, type = "text") {
         const { data, errors } = this.state;
         return (
-          <Input
-            name={name}
-            type={type}
-            label={label}
-            value={data[name]}
-            onChange={this.handleChange}
-            error={errors[name]}
-          />
+            <Input
+                name={name}
+                type={type}
+                label={label}
+                value={data[name]}
+                onChange={this.handleChange}
+                error={errors[name]}
+            />
         );
-      }
+    }
+
+    renderButton(label) {
+        return (<button className="btn btn-primary">{label}</button>)
+    }
+    
 }
