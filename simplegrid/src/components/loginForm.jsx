@@ -42,7 +42,7 @@ export class LoginForm extends BaseForm {
             <form onSubmit={this.handleSubmit}>
                 {this.renderInput("username", "Username")}
                 {this.renderInput("password", "Password", "password")}
-                <button className="btn btn-primary">Login</button>
+                {this.renderButton("Login")}
             </form>
         );
     }
