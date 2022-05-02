@@ -149,7 +149,6 @@ class App extends Component {
 
   draw() {
     let items = [];
-
     for (let i = 0; i < 20; i++) {
       for (let j = 0; j < 20; j++) {
         if (j === this.state.food.column && i === this.state.food.row)
